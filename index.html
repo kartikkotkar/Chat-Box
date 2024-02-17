@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+        <h4 class="heading">reciver</h4>
+        <h4 id="text"></h4>
+    </div>
+    <input id="newText" type="text">
+    <button onclick="addText()">Sender</button>
+
+
+    <script>
+          function addText(){
+            if (newText.value !== null){
+                text.innerHTML += text.innerHTML ? "<hr>" +newText.value : newText.value; 
+                newText.value = ""
+            }
+          }
+    </script>
+</body>
+</html>
